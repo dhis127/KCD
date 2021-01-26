@@ -1,0 +1,35 @@
+
+
+폰트어썸 태그
+
+
+*SNS
+
+
+
+
+----
+상단헤더 햄버거메뉴(사이트맵.): <i class="fas fa-bars"></i>
+
+
+*기업(빌딩.흰) : <i class="far fa-building"></i>
+*기업(빌딩.검) : <i class="fas fa-building"></i>
+*개인(단체) : <i class="fas fa-users"></i>
+*개인(체크) : <i class="fas fa-user-check"></i>
+*대학교(신전?) : <i class="fas fa-university"></i>
+*대학교(학사모) : <i class="fas fa-graduation-cap"></i>
+*국비지원(손 위 하트) : <i class="fas fa-hand-holding-heart"></i>
+*강사소개(칠판) : <i class="fas fa-chalkboard-teacher"></i>
+*온라인상담 모니터아이콘 : <i class="fas fa-tv"></i>
+
+
+풋터영역 탑버튼 화살표: <i class="fas fa-chevron-up"></i>
+
+
+
+
+
+
+
+(+)
+*네이버 라인 : <i class="fab fa-line"></i>

@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+.clear {content: ''; display: block; clear: both;}
+body {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+
+#wrap {width: 100%; margin: 0 auto;}
+
+/*                    헤드라인*/
+/*로그인/회원가입*/
+header {width: 95%; height: 150px; margin: 0 auto;}
+#hdline {float: right; display: flex; margin: 5px 20px; font-size: 12px; text-align: center;}
+#login {padding: 0 10px;}
+#join {padding: 0 10px; border-left: 1px solid black;}
+#chat {padding: 0 10px; border-left: 1px solid black; display: none;}
+
+.head {display: flex;}
+/*로고*/
+#hdbox a img {width: 220px; padding: 0px 30px;}
+/*헤더메뉴*/
+#hdmenu>.f16 {position: relative; display: flex; justify-content: space-around; float: right; width: 95%; text-align: center;}
+.f16 li {width: 100%;}
+.sub li {width: 100%;}
+.f16 li a {color: darkslategray; font-size: 20px; font-weight: bold;}
+
+
+
+/*메뉴바(iibi꺼 따옴)*/
+/*
+#hdmenu {position: relative; width: 100%; padding: 50px 30px 5px 5px; margin: 0 20px;  z-index: 10;}
+#hdmenu > div > ul > li:hover {column-rule-color: lightblue;}
+
+#hdmenu > div > ul > li > .sub {display: none; position: absolute; width: 100%; left: 0; background-color: lightgray; opacity: 0.7;}
+#hdmenu > div > ul > li:hover .sub {display: block;}
+
+#hdmenu > div > ul > li > .sub > li > a {color: white; display: block; line-height: 50px;}
+#hdmenu > div > ul > li > .sub > li > a:hover {color: #bbb;}
+*/
+
+
+#hdmenu {width: 100%; position: relative; right: 0; top: 10px; z-index: 10;}
+#hdmenu .burger {display: none;}
+.f16>li>a {display: block; text-align: center; height: 40px; line-height: 40px; padding: 23px;}
+.f16>li>a:hover-ul.sub {border-top: 12px solid #3EA0BD;}
+.f16>li>ul.sub {border-top: 12px solid #3EA0BD;}
+.f16>li>ul.sub:hover {border-top: 12px solid #3EA0BD;}
+
+.sub {width: 100%; background: rgba(255, 255, 255, 0.7); position: relative; top: 0px; left: 0; display: none; clear: both;}
+/*hover 시 서브메뉴 나오도록*/
+.f16>li:hover>.sub {display: block;}
+
+.sub>li>a {display: block; text-align: center; font-size: 16px; padding: 10px;}
+/*.sub>li:hover > a {color: #3EA0BD; font-size: 19px;}*/
+
+
+/*슬라이드*/
+/*--> iibi꺼 따옴*/
+slide {width: 100vw; overflow: hidden;}
+#visual {width: 95%; height: 500px; overflow: hidden; margin: 0 auto;}
+#visual > ul {width: 500%; height: 500px; overflow: hidden;}
+#visual > ul > li {float: left; width: 20%; height: 500px; position: relative;}
+#visual > ul > li > img {width: 100%; overflow: hidden;}
+#visual > ul > li {animation: slider 15s infinite;}
+@keyframes slider {
+    0% {right: 0;}
+    20% {right: 20%;}
+    40% {right: 40%;}
+    60% {right: 60%;}
+    80% {right: 80%;}
+}
+/*슬라이드 위 텍스트 및 아이콘*/
+#rolling_wrap {position: absolute; width: 80%; top: 150px; left: 60%; transform:translate(-50%);}
+/*▲이미지슬라이드(relative 기준으로 absolute 잡아주고 위치 지정.)*/
+#rolling_section {position: relative; width: 100%; height: 500px;}
+#img_text {position: absolute; left: 50px; top:70px; width: 50%; color: #3EA0BD; text-shadow: 2px 2px 2px lightgray;}
+#img_text > p:first-child {font-size: 70px; font-weight: bold; letter-spacing: 30px;}
+#img_text > p:last-child {padding-top: 20px; line-height: 25px;}
+#bulb_img {width: 50%; height: 500px; background: url(img/bulb.png) no-repeat; position: absolute; top: 0; right: 5%;}
+
+
+
+/*6칸박스*/
+aside {width: 90%; display: flex; justify-content: space-between; overflow: visible; text-align: center; margin: 40px auto;}
+.boxes {display: inline-block; width: 33%; color: darkslategray;}
+.boxes:hover {transform: scale(1.2); transition: 0.5s; box-sizing: border-box; overflow: hidden;}
+.boxes i {display: block;  font-size: 55px; padding: 30px 0 30px 0; color: #3EA0BD;}
+.boxes:hover > i {color: #E7398E; transition: 0.5s;}
+.boxes p {padding: 10px 0 0 0; font-size: 12px; line-height: 14px; color: gray;}
+
+
+/*추천교육박스*/
+#recbox {width: 95%; height: 370px; background-image: url(img/recboxbg.jpg); background-size: cover; margin: 30px 10px;}
+#recbox>h2 {text-align: center; padding: 20px 0; color: darkslategray;}
+
+#reccap {display: flex; justify-content: space-between; width: 70%; margin: 0 auto; color: white;}
+.rec {position: relative; width: 300px; height: 270px;}
+.b1 {background-image: url(img/speech.jpeg); background-size: cover;}
+.b2 {background-image: url(img/hsm.jpg); background-size: cover;}
+.b3 {background-image: url(img/manner.jpg); background-size: cover;}
+.txtbg {width: 100%; height: 80px; position: absolute; bottom: 0; background-color: black; opacity: 0.5;}
+.rec:hover {transform: scale(1.1); transition-duration: 0.5s; cursor: pointer;}
+.txtbox a {width: 100%; position: absolute; bottom: 12px; left: 20px; color: white; }
+.txtbox a p {margin-top: 10px; font-size: 12px; line-height: 14px;}
+
+
+/*2칸게시판영역*/
+#board {display: flex; justify-content: center; margin: 20px 0;}
+.board {width:90%; padding: 5px 70px; text-align: center;  color: darkslategray;}
+.board h2 {padding: 10px; margin-bottom: 10px; text-align: left; border-bottom: 5px solid #3EA0BD;}
+table {width: 100%; margin: 0 auto; font-size: 14px;}
+.review {border-left: 2px solid gray;}
+tbody tr td:nth-child(1) {text-align: left; overflow: hidden; box-sizing: border-box;}
+
+/*배너이미지영역*/
+#banner {position: relative; width: 100%; height: 120px; margin: 5px 0;}
+#bannerbg {position: absolute; width: 100%; height: 120px; background-image: url(img/thumbs-up.jpg); opacity: 0.3; background-position:center;}
+#btxt {text-align: center; top: 20px; padding: 37px 0;  color: black; text-shadow: 3px 3px 10px white;}
+
+
+/*풋터(푸른바다펜션꺼)*/
+.footer .outer {background: #e5e5e5; width: 100%; margin: 0 auto;}
+.footer .bmenu {text-align: center;}
+.footer .bmenu a {font-size: 14px; line-height: 30px; padding: 0 25px;}
+.address {width: 95%; margin: 30px auto;}
+
+
+/*플로팅바*/
+.floating {position: fixed; right: 30px; top: 180px; text-align: center; width: 160px; border-radius: 2px;}
+.floating .bx1 {background-color: darkslategray; height: 60px; padding-top: 20px; color: white;}
+.floating .bx2 {background-color: gray; height: 60px; border-top:1px solid lightgray;}
+.bx2 a {display: flex; justify-content: center;  padding-top: 21px; color: white;}
+.bx2 a i {font-size: 20px;}
+.bx2 a p {font-size: 14px;}
+.floating .bx3 {background-color: gray; height: 60px; border-top:1px solid lightgray;}
+.bx3 a {display: flex; justify-content: center;  padding-top: 21px; color: white;}
+.bx3 a img {width: 26px;}
+.bx3 a p {font-size: 14px;}
+.floating .bx4 {background-color: gray; height: 60px; border-top:1px solid lightgray;}
+.bx4 a {display: flex; justify-content: center;  padding-top: 21px; color: white;}
+.bx4 a img {width: 26px;}
+.bx4 a p {font-size: 14px; }
+
+.bx5>img {width: 110px; border-top: 10px solid white;}
+.bx6>img {width: 110px; border-top: 10px solid white;}
+
+
+
+
+
+@media screen and (min-width:640px) and (max-width:1023px) {
+    header {position: relative; width: 100%; height: 80px;}
+/*    포지션 fixed였던 header를 relative로 변경, 너비와 높이 변경*/
+    .floating {display: none;}
+    #chat {display: block;}
+    .slide {width: 100%; height: 500px; margin-top: 80px; overflow: hidden;}
+    #visual > ul > li > img {height: 100%; overflow: hidden;}
+    #img_text {margin: 3% 0 0 -20%;}
+    #bulb_img {top: -20px; right: 10%;}
+    
+    .f16>li>a {font-size: 16px; padding: 30px 3px;}
+    .sub>li>a {font-size: 12px; padding: 10px 0; }
+    .sub>li:hover a {font-size: 14px;}
+    
+    aside {margin: 40px auto; width: 95%;}
+    
+    #recbox, #board, #banner {width: 95%; margin: 10px auto;}
+    #recbox {height: 400px;}
+    .rec {width: 100%; margin: 10px;}
+
+    table {border-collapse: collapse; display: table-cell; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; box-sizing: border-box;}
+
+}
+
+
+
+@media screen and (max-width:639px) {
+    header {position: relative; width: 100%; height: 80px;}
+/*    포지션 fixed였던 header를 relative로 변경, 너비와 높이 변경*/
+    .floating, #board {display: none;}
+    #chat {display: block;}
+    
+    #hdmenu .burger {display: flex; flex-direction: column; align-items: center; float: right; margin: 20px 30px 0 0;}
+    #hdmenu .burger div {width: 28px; height: 4px; background-color: dimgray; margin: 3px; transition: all 0.4s ease;}
+    
+/*    JS를 위한 햄버거 css*/
+    .toggle .line1 {transform: rotate(-405deg) translate(-8px, 6px);}
+    .toggle .line2 {opacity: 0;}
+    .toggle .line3 {transform: rotate(405deg) translate(-8px, -6px);}
+    
+    #hdmenu .f16 {display: none;}
+    
+    .slide {width: 95vw; height: 360px; margin-top: 80px; overflow: hidden;}
+    #visual > ul > li > img {height: 100%; overflow: hidden;}
+    #img_text {margin: -5% 20%;}
+    #img_text>p:nth-child(1) {font-size: 50px; letter-spacing: 20px; margin-left: -70%;}
+    #img_text>p:nth-child(2) {font-size: 15px; margin-left: -70%;}
+    #bulb_img {display: none;}
+
+    aside:nth-child(2) {margin: 20px 10px 5px 10px; width: 95%;}
+    aside:nth-child(3) {margin: 20px 10px 5px 10px; width: 95%;}
+    .boxes>i {font-size: 36px;}
+    .boxes>h3 {font-size: 14px;}
+    .boxes>p {display: none;}
+    
+    #recbox {width: 95%;}
+    #recbox h2 {font-size: 20px;}
+    #reccap {display: flex; flex-direction: column; width: 300px; height: 260px;}
+    .rec {background: none;}
+    
+    #banner {width: 100%; margin: 0 auto;}
+    #btxt h3 {font-size: 16px; padding-top: 20px;}
+    #btxt p {font-size: 12px;}
+
+    table {border-collapse: collapse; display: table-cell; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; box-sizing: border-box;}
+
+}
+
+
+
